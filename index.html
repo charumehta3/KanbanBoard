@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Kanban Board</title>
+<link rel="stylesheet" href="./styles.css" />
+
+</head>
+
+<body>
+
+<h1>Task Board</h1>
+<div id="conatiner" class="kanban-cnt">
+
+</div>
+
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span id="closeTask" class="close">&times;</span>
+<h3 id ="modalTitle"> Add Task </h3>
+      <div id="header">
+          <input type="hidden" value='' id="taskIdInput" />
+          <input id="addTaskInput" type="text" placeholder="adding new task">
+          <input type="date" id="addTaskdate"/>
+          <select id="categoryDD">
+              
+          </select>
+      </div>
+      <div id="footer">
+        <input type="button" value="Save" id="addTask" />
+        <input type="button" value="cancel" id="cancelTask"/>
+      </div>
+    </div>
+  
+  </div>
+
+<script src="./data.js" type="text/javascript"></script>
+
+<script src="./kanban.js" type="text/javascript"></script>
+</body>
+
+</html>
